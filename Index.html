@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2: Past Simple vs. Past Continuous | НУШ 7 Клас</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Canvas Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f8fafc;
+        }
+        .step-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .step-card:hover {
+            transform: translateY(-2px);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f5f9;
+            border-radius: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="text-slate-800 bg-gradient-to-br from-slate-100 via-indigo-50/30 to-purple-50/30 min-h-screen pb-16">
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <span class="bg-indigo-600 text-white font-black px-3 py-1 rounded-xl text-sm shadow-sm">Lesson 2</span>
+                <h1 class="text-lg md:text-xl font-bold text-slate-900">Past Simple vs. Past Continuous</h1>
+            </div>
+            <div class="flex items-center space-x-3">
+                <span class="text-xs font-semibold px-2.5 py-1 bg-purple-100 text-purple-700 rounded-lg">НУШ 7 клас (A2)</span>
+                <div id="overallScoreBadge" class="hidden md:flex items-center space-x-1.5 bg-amber-50 text-amber-700 px-3 py-1 rounded-lg border border-amber-200 text-sm font-bold">
+                    <i class="fa-solid fa-star text-amber-500"></i>
+                    <span>Прогрес: <span id="totalPoints">0</span> / 20</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8 space-y-12">
+
+        <!-- Banner / Hero Section -->
+        <section class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 rounded-3xl p-6 md:p-10 text-white shadow-xl relative overflow-hidden">
+            <div class="relative z-10 max-w-2xl">
+                <span class="bg-white/20 text-white text-xs font-bold uppercase px-3 py-1 rounded-full backdrop-blur-md mb-3 inline-block">
+                    <i class="fa-solid fa-graduation-cap mr-1"></i> Граматична майстерня
+                </span>
+                <h2 class="text-2xl md:text-4xl font-black mb-3 leading-tight">
+                    Коли дія тривала, а коли перервалася?
+                </h2>
+                <p class="text-indigo-100 text-sm md:text-base leading-relaxed mb-6">
+                    Пройди 4 прості кроки: подивись відео, постав запитання штучному інтелекту, виконай інтерактивні вправи та закріпи знання домашнім завданням!
+                </p>
+                <div class="flex flex-wrap gap-3">
+                    <a href="#step1" class="bg-white text-indigo-700 font-bold px-4 py-2.5 rounded-xl shadow-md hover:bg-indigo-50 transition text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-play text-indigo-600"></i> Почати з Кроку 1
+                    </a>
+                </div>
+            </div>
+            <div class="absolute -right-10 -bottom-10 opacity-20 pointer-events-none">
+                <i class="fa-solid fa-clock-rotate-left text-[220px]"></i>
+            </div>
+        </section>
+
+        <!-- STEP 1: Video Explanation -->
+        <section id="step1" class="bg-white rounded-3xl p-6 md:p-8 shadow-md border border-slate-200/80 step-card">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 rounded-2xl bg-amber-100 text-amber-600 font-black flex items-center justify-center text-lg shadow-sm">
+                    1
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900">Подивись відеопояснення</h3>
+                    <p class="text-xs text-slate-500">Оксана Адамівна Скригун — ELIN Online Language School</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
+                <div class="lg:col-span-2 rounded-2xl overflow-hidden shadow-lg border border-slate-200 aspect-video bg-slate-900">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/aviNqwBFY2o" title="Past Simple vs Past Continuous" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="bg-amber-50/70 border border-amber-200/80 rounded-2xl p-5 space-y-4">
+                    <div class="flex items-center gap-2 text-amber-800 font-bold">
+                        <i class="fa-solid fa-lightbulb text-amber-500 text-xl"></i>
+                        <h4>Головна підказка:</h4>
+                    </div>
+                    <ul class="text-sm text-slate-700 space-y-2 leading-relaxed">
+                        <li class="flex items-start gap-2">
+                            <span class="text-indigo-600 font-bold">•</span>
+                            <span><strong>Past Continuous</strong> (was/were + V-ing): тривала дія в минулому.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-indigo-600 font-bold">•</span>
+                            <span><strong>Past Simple</strong> (V2/V-ed): коротка раптова дія, яка перервала тривалу.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-indigo-600 font-bold">•</span>
+                            <span>Слова-маркери: <strong>WHEN</strong> (когда -> Past Simple) та <strong>WHILE</strong> (поки -> Past Continuous).</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- STEP 2: AI Assistant Interaction -->
+        <section id="step2" class="bg-white rounded-3xl p-6 md:p-8 shadow-md border border-slate-200/80 step-card">
+            <div class="flex items-center justify-between mb-6 flex-wrap gap-3">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-2xl bg-emerald-100 text-emerald-600 font-black flex items-center justify-center text-lg shadow-sm">
+                        2
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900">Запитати у ШІ-Вчителя</h3>
+                        <p class="text-xs text-slate-500">Якщо щось залишилося незрозумілим, попроси ШІ пояснити детальніше!</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 flex-wrap">
+                    <a href="https://classroom.google.com/c/ODc1NzY3MDM2NTk1/m/ODc2ODcwNzA2Nzg0/details" target="_blank" rel="noopener noreferrer" class="text-xs bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-3 py-2 rounded-xl transition flex items-center gap-1.5 shadow-sm">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <span>Відкрити бот у Google Classroom</span>
+                    </a>
+                    <button onclick="copyChatForTeacher()" class="text-xs bg-emerald-50 text-emerald-700 hover:bg-emerald-100 border border-emerald-200 font-semibold px-3 py-2 rounded-xl transition flex items-center gap-1.5">
+                        <i class="fa-regular fa-copy"></i> Скопіювати діалог для вчителя
+                    </button>
+                </div>
+            </div>
+
+            <!-- Google Classroom Integration Banner -->
+            <div class="mb-5 p-4 bg-gradient-to-r from-indigo-50 to-purple-50 border border-indigo-100 rounded-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-sm">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center shrink-0 shadow-sm">
+                        <i class="fa-solid fa-robot text-lg"></i>
+                    </div>
+                    <div>
+                        <span class="font-bold text-slate-900 block">Офіційний ШІ-помічник у Google Classroom</span>
+                        <span class="text-xs text-slate-600">Ви можете працювати з налаштованим асистентом у Classroom або ставити запитання у чаті нижче.</span>
+                    </div>
+                </div>
+                <a href="https://classroom.google.com/c/ODc1NzY3MDM2NTk1/m/ODc2ODcwNzA2Nzg0/details" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition whitespace-nowrap shadow-sm">
+                    <span>Перейти до чат-бота</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="bg-slate-900 rounded-2xl p-4 md:p-6 text-white shadow-inner flex flex-col h-[400px]">
+                <!-- Chat Messages Container -->
+                <div id="chatBox" class="flex-1 overflow-y-auto space-y-3 pr-2 custom-scrollbar">
+                    <div class="flex items-start gap-3">
+                        <div class="w-8 h-8 rounded-full bg-indigo-500 flex items-center justify-center text-white text-xs font-bold flex-shrink-0 shadow">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <div class="bg-slate-800 text-slate-100 p-3.5 rounded-2xl rounded-tl-none max-w-[85%] text-sm leading-relaxed border border-slate-700">
+                            Привіт! Я твій ШІ-помічник з англійської мови 👋<br>
+                            Подивився відео, але лишилися питання щодо <strong>Past Simple</strong> та <strong>Past Continuous</strong>? Напиши мені, наприклад: <em>«Поясни різницю між When та While на простих прикладах»</em>!
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chat Input Form -->
+                <form id="aiForm" onsubmit="handleAiQuery(event)" class="mt-4 flex gap-2">
+                    <input type="text" id="aiInput" placeholder="Напиши своє запитання українською..." required class="flex-1 bg-slate-800 border border-slate-700 text-white placeholder-slate-400 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-indigo-500 transition">
+                    <button type="submit" id="aiSubmitBtn" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-5 py-3 rounded-xl text-sm transition flex items-center gap-2">
+                        <span>Надіслати</span>
+                        <i class="fa-solid fa-paper-plane text-xs"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- STEP 3: Interactive Practice Exercises -->
+        <section id="step3" class="bg-white rounded-3xl p-6 md:p-8 shadow-md border border-slate-200/80 step-card">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 rounded-2xl bg-purple-100 text-purple-600 font-black flex items-center justify-center text-lg shadow-sm">
+                    3
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900">Інтерактивне тренування</h3>
+                    <p class="text-xs text-slate-500">Виконай вправи, поки не отримаєш найвищий результат!</p>
+                </div>
+            </div>
+
+            <!-- EXERCISE 1: Multiple Choice / Dropdown -->
+            <div class="mb-10 bg-slate-50 border border-slate-200 rounded-2xl p-5 md:p-7">
+                <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
+                    <h4 class="font-bold text-slate-800 flex items-center gap-2">
+                        <i class="fa-solid fa-list-check text-purple-600"></i>
+                        Вправа 1: Оберіть правильну часову форму (6 речень)
+                    </h4>
+                    <span id="ex1Score" class="text-xs font-bold text-purple-700 bg-purple-100 px-3 py-1 rounded-full">Результат: 0/6</span>
+                </div>
+
+                <form id="ex1Form" class="space-y-4">
+                    <!-- Sentence 1 -->
+                    <div class="p-4 bg-white rounded-xl border border-slate-200 space-y-2">
+                        <p class="text-sm font-medium text-slate-800">
+                            1. I <select id="ex1_1" class="border border-slate-300 rounded-lg px-2 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-purple-400 outline-none">
+                                <option value="">-- оберіть --</option>
+                                <option value="was watching">was watching</option>
+                                <option value="watched">watched</option>
+                            </select> YouTube when my mom called me for dinner.
+                        </p>
+                        <div id="ex1_1_fb" class="text-xs hidden font-medium"></div>
+                    </div>
+
+                    <!-- Sentence 2 -->
+                    <div class="p-4 bg-white rounded-xl border border-slate-200 space-y-2">
+                        <p class="text-sm font-medium text-slate-800">
+                            2. While Max was playing football, he <select id="ex1_2" class="border border-slate-300 rounded-lg px-2 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-purple-400 outline-none">
+                                <option value="">-- оберіть --</option>
+                                <option value="was dropping">was dropping</option>
+                                <option value="dropped">dropped</option>
+                            </select> his phone.
+                        </p>
+                        <div id="ex1_2_fb" class="text-xs hidden font-medium"></div>
+                    </div>
+
+                    <!-- Sentence 3 -->
+                    <div class="p-4 bg-white rounded-xl border border-slate-200 space-y-2">
+                        <p class="text-sm font-medium text-slate-800">
+                            3. They <select id="ex1_3" class="border border-slate-300 rounded-lg px-2 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-purple-400 outline-none">
+                                <option value="">-- оберіть --</option>
+                                <option value="were doing">were doing</option>
+                                <option value="did">did</option>
+                            </select> their homework at 5 o'clock yesterday.
+                        </p>
+                        <div id="ex1_3_fb" class="text-xs hidden font-medium"></div>
+                    </div>
+
+                    <!-- Sentence 4 -->
+                    <div class="p-4 bg-white rounded-xl border border-slate-200 space-y-2">
+                        <p class="text-sm font-medium text-slate-800">
+                            4. It <select id="ex1_4" class="border border-slate-300 rounded-lg px-2 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-purple-400 outline-none">
+                                <option value="">-- оберіть --</option>
+                                <option value="started">started</option>
+                                <option value="was starting">was starting</option>
+                            </select> to rain while we were walking in the park.
+                        </p>
+                        <div id="ex1_4_fb" class="text-xs hidden font-medium"></div>
+                    </div>
+
+                    <!-- Sentence 5 -->
+                    <div class="p-4 bg-white rounded-xl border border-slate-200 space-y-2">
+                        <p class="text-sm font-medium text-slate-800">
+                            5. She <select id="ex1_5" class="border border-slate-300 rounded-lg px-2 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-purple-400 outline-none">
+                                <option value="">-- оберіть --</option>
+                                <option value="was sleeping">was sleeping</option>
+                                <option value="slept">slept</option>
+                            </select> when the loud noise woke her up.
+                        </p>
+                        <div id="ex1_5_fb" class="text-xs hidden font-medium"></div>
+                    </div>
+
+                    <!-- Sentence 6 -->
+                    <div class="p-4 bg-white rounded-xl border border-slate-200 space-y-2">
+                        <p class="text-sm font-medium text-slate-800">
+                            6. What <select id="ex1_6" class="border border-slate-300 rounded-lg px-2 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-purple-400 outline-none">
+                                <option value="">-- оберіть --</option>
+                                <option value="were you doing">were you doing</option>
+                                <option value="did you do">did you do</option>
+                            </select> when I texted you last night?
+                        </p>
+                        <div id="ex1_6_fb" class="text-xs hidden font-medium"></div>
+                    </div>
+
+                    <button type="button" onclick="checkEx1()" class="bg-purple-600 hover:bg-purple-700 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition">
+                        Перевірити Вправу 1
+                    </button>
+                </form>
+            </div>
+
+            <!-- EXERCISE 2: When vs While Choice -->
+            <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 md:p-7">
+                <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
+                    <h4 class="font-bold text-slate-800 flex items-center gap-2">
+                        <i class="fa-solid fa-code-compare text-indigo-600"></i>
+                        Вправа 2: Оберіть WHEN або WHILE (6 речень)
+                    </h4>
+                    <span id="ex2Score" class="text-xs font-bold text-indigo-700 bg-indigo-100 px-3 py-1 rounded-full">Результат: 0/6</span>
+                </div>
+
+                <form id="ex2Form" class="space-y-4">
+                    <!-- Sentence 1 -->
+                    <div class="p-4 bg-white rounded-xl border border-slate-200 space-y-2">
+                        <p class="text-sm font-medium text-slate-800">
+                            1. <select id="ex2_1" class="border border-slate-300 rounded-lg px-2 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-indigo-400 outline-none">
+                                <option value="">-- ? --</option>
+                                <option value="While">While</option>
+                                <option value="When">When</option>
+                            </select> I was cooking dinner, the lights went out.
+                        </p>
+                        <div id="ex2_1_fb" class="text-xs hidden font-medium"></div>
+                    </div>
+
+                    <!-- Sentence 2 -->
+                    <div class="p-4 bg-white rounded-xl border border-slate-200 space-y-2">
+                        <p class="text-sm font-medium text-slate-800">
+                            2. We were listening to music <select id="ex2_2" class="border border-slate-300 rounded-lg px-2 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-indigo-400 outline-none">
+                                <option value="">-- ? --</option>
+                                <option value="when">when</option>
+                                <option value="while">while</option>
+                            </select> the teacher came into the classroom.
+                        </p>
+                        <div id="ex2_2_fb" class="text-xs hidden font-medium"></div>
+                    </div>
+
+                    <!-- Sentence 3 -->
+                    <div class="p-4 bg-white rounded-xl border border-slate-200 space-y-2">
+                        <p class="text-sm font-medium text-slate-800">
+                            3. <select id="ex2_3" class="border border-slate-300 rounded-lg px-2 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-indigo-400 outline-none">
+                                <option value="">-- ? --</option>
+                                <option value="While">While</option>
+                                <option value="When">When</option>
+                            </select> my sister was taking photos, I was buying ice cream.
+                        </p>
+                        <div id="ex2_3_fb" class="text-xs hidden font-medium"></div>
+                    </div>
+
+                    <!-- Sentence 4 -->
+                    <div class="p-4 bg-white rounded-xl border border-slate-200 space-y-2">
+                        <p class="text-sm font-medium text-slate-800">
+                            4. Anna saw her old friend <select id="ex2_4" class="border border-slate-300 rounded-lg px-2 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-indigo-400 outline-none">
+                                <option value="">-- ? --</option>
+                                <option value="while">while</option>
+                                <option value="when">when</option>
+                            </select> she was shopping at the mall.
+                        </p>
+                        <div id="ex2_4_fb" class="text-xs hidden font-medium"></div>
+                    </div>
+
+                    <!-- Sentence 5 -->
+                    <div class="p-4 bg-white rounded-xl border border-slate-200 space-y-2">
+                        <p class="text-sm font-medium text-slate-800">
+                            5. What were you thinking about <select id="ex2_5" class="border border-slate-300 rounded-lg px-2 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-indigo-400 outline-none">
+                                <option value="">-- ? --</option>
+                                <option value="when">when</option>
+                                <option value="while">while</option>
+                            </select> the accident happened?
+                        </p>
+                        <div id="ex2_5_fb" class="text-xs hidden font-medium"></div>
+                    </div>
+
+                    <!-- Sentence 6 -->
+                    <div class="p-4 bg-white rounded-xl border border-slate-200 space-y-2">
+                        <p class="text-sm font-medium text-slate-800">
+                            6. <select id="ex2_6" class="border border-slate-300 rounded-lg px-2 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-indigo-400 outline-none">
+                                <option value="">-- ? --</option>
+                                <option value="When">When</option>
+                                <option value="While">While</option>
+                            </select> I opened the window, a bird flew inside.
+                        </p>
+                        <div id="ex2_6_fb" class="text-xs hidden font-medium"></div>
+                    </div>
+
+                    <button type="button" onclick="checkEx2()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition">
+                        Перевірити Вправу 2
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- STEP 4: Homework Task (Prepare 7 Unit 4 Grammar Worksheet) -->
+        <section id="step4" class="bg-white rounded-3xl p-6 md:p-8 shadow-md border border-slate-200/80 step-card">
+            <div class="flex items-center justify-between mb-6 flex-wrap gap-3">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-2xl bg-pink-100 text-pink-600 font-black flex items-center justify-center text-lg shadow-sm">
+                        4
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <h3 class="text-xl font-bold text-slate-900">Домашнє завдання (Homework)</h3>
+                            <span class="bg-pink-600 text-white text-[10px] uppercase font-extrabold px-2 py-0.5 rounded-md">Prepare 7</span>
+                        </div>
+                        <p class="text-xs text-slate-500">Заповни пропуски правильними формами дієслів у дужках (Past Simple чи Past Continuous)</p>
+                    </div>
+                </div>
+                <span id="hwScore" class="text-xs font-bold text-pink-700 bg-pink-100 px-3 py-1 rounded-full">Результат: 0/8</span>
+            </div>
+
+            <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 md:p-7">
+                <!-- Example Row -->
+                <div class="mb-6 p-4 bg-indigo-50 border border-indigo-200 rounded-xl text-sm text-slate-700">
+                    <span class="font-bold text-indigo-800">Приклад (0):</span> I <u>was reading</u> (read) a book about NASA when Kelly <u>texted</u> (text) me.
+                </div>
+
+                <form id="hwForm" class="space-y-4">
+                    <!-- 1 -->
+                    <div class="p-4 bg-white rounded-xl border border-slate-200 space-y-2">
+                        <p class="text-sm font-medium text-slate-800 leading-relaxed">
+                            1. Marta <input type="text" id="hw_1_a" placeholder="swim" class="w-36 border border-slate-300 rounded-lg px-2.5 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-pink-400 outline-none"> (swim) in the sea when it <input type="text" id="hw_1_b" placeholder="start" class="w-32 border border-slate-300 rounded-lg px-2.5 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-pink-400 outline-none"> (start) raining heavily.
+                        </p>
+                        <div id="hw_1_fb" class="text-xs hidden font-medium"></div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="p-4 bg-white rounded-xl border border-slate-200 space-y-2">
+                        <p class="text-sm font-medium text-slate-800 leading-relaxed">
+                            2. Charlie <input type="text" id="hw_2_a" placeholder="phone" class="w-36 border border-slate-300 rounded-lg px-2.5 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-pink-400 outline-none"> (phone) while you <input type="text" id="hw_2_b" placeholder="play" class="w-36 border border-slate-300 rounded-lg px-2.5 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-pink-400 outline-none"> (play) football.
+                        </p>
+                        <div id="hw_2_fb" class="text-xs hidden font-medium"></div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="p-4 bg-white rounded-xl border border-slate-200 space-y-2">
+                        <p class="text-sm font-medium text-slate-800 leading-relaxed">
+                            3. Dina <input type="text" id="hw_3_a" placeholder="walk" class="w-36 border border-slate-300 rounded-lg px-2.5 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-pink-400 outline-none"> (walk) home from the sports club when she <input type="text" id="hw_3_b" placeholder="see" class="w-28 border border-slate-300 rounded-lg px-2.5 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-pink-400 outline-none"> (see) her French teacher, Mr Roland.
+                        </p>
+                        <div id="hw_3_fb" class="text-xs hidden font-medium"></div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="p-4 bg-white rounded-xl border border-slate-200 space-y-2">
+                        <p class="text-sm font-medium text-slate-800 leading-relaxed">
+                            4. Jim's mum <input type="text" id="hw_4_a" placeholder="buy" class="w-32 border border-slate-300 rounded-lg px-2.5 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-pink-400 outline-none"> (buy) his birthday present while he <input type="text" id="hw_4_b" placeholder="play" class="w-36 border border-slate-300 rounded-lg px-2.5 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-pink-400 outline-none"> (play) tennis at the club.
+                        </p>
+                        <div id="hw_4_fb" class="text-xs hidden font-medium"></div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="p-4 bg-white rounded-xl border border-slate-200 space-y-2">
+                        <p class="text-sm font-medium text-slate-800 leading-relaxed">
+                            5. Sarah <input type="text" id="hw_5_a" placeholder="watch" class="w-36 border border-slate-300 rounded-lg px-2.5 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-pink-400 outline-none"> (watch) a film in the cinema when someone <input type="text" id="hw_5_b" placeholder="take" class="w-28 border border-slate-300 rounded-lg px-2.5 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-pink-400 outline-none"> (take) her bag.
+                        </p>
+                        <div id="hw_5_fb" class="text-xs hidden font-medium"></div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="p-4 bg-white rounded-xl border border-slate-200 space-y-2">
+                        <p class="text-sm font-medium text-slate-800 leading-relaxed">
+                            6. Bruna and I <input type="text" id="hw_6_a" placeholder="fly" class="w-32 border border-slate-300 rounded-lg px-2.5 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-pink-400 outline-none"> (fly) to London when a storm <input type="text" id="hw_6_b" placeholder="begin" class="w-28 border border-slate-300 rounded-lg px-2.5 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-pink-400 outline-none"> (begin).
+                        </p>
+                        <div id="hw_6_fb" class="text-xs hidden font-medium"></div>
+                    </div>
+
+                    <!-- 7 -->
+                    <div class="p-4 bg-white rounded-xl border border-slate-200 space-y-2">
+                        <p class="text-sm font-medium text-slate-800 leading-relaxed">
+                            7. It was very busy in our house at seven o'clock this morning. While I <input type="text" id="hw_7_a" placeholder="make" class="w-32 border border-slate-300 rounded-lg px-2.5 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-pink-400 outline-none"> (make) breakfast, my mum <input type="text" id="hw_7_b" placeholder="talk" class="w-32 border border-slate-300 rounded-lg px-2.5 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-pink-400 outline-none"> (talk) on the phone, my dad <input type="text" id="hw_7_c" placeholder="clean" class="w-32 border border-slate-300 rounded-lg px-2.5 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-pink-400 outline-none"> (clean) the floor and my sisters <input type="text" id="hw_7_d" placeholder="play" class="w-32 border border-slate-300 rounded-lg px-2.5 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-pink-400 outline-none"> (play) with the dog.
+                        </p>
+                        <div id="hw_7_fb" class="text-xs hidden font-medium"></div>
+                    </div>
+
+                    <!-- 8 -->
+                    <div class="p-4 bg-white rounded-xl border border-slate-200 space-y-2">
+                        <p class="text-sm font-medium text-slate-800 leading-relaxed">
+                            8. Katie <input type="text" id="hw_8_a" placeholder="do" class="w-32 border border-slate-300 rounded-lg px-2.5 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-pink-400 outline-none"> (do) her homework when her best friend <input type="text" id="hw_8_b" placeholder="arrive" class="w-28 border border-slate-300 rounded-lg px-2.5 py-1 text-sm bg-slate-50 focus:bg-white focus:ring-2 focus:ring-pink-400 outline-none"> (arrive) to see her.
+                        </p>
+                        <div id="hw_8_fb" class="text-xs hidden font-medium"></div>
+                    </div>
+
+                    <button type="button" onclick="checkHw()" class="bg-pink-600 hover:bg-pink-700 text-white font-bold px-6 py-3 rounded-xl text-sm transition shadow-md flex items-center gap-2">
+                        <i class="fa-solid fa-check-double"></i>
+                        Перевірити Домашнє Завдання
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Reflection / SEL Section -->
+        <section class="bg-gradient-to-r from-emerald-600 to-teal-700 text-white rounded-3xl p-6 md:p-8 shadow-lg">
+            <h3 class="text-xl font-bold mb-2 flex items-center gap-2">
+                <i class="fa-solid fa-heart-pulse"></i> Рефлексія та SEL (Самоусвідомлення)
+            </h3>
+            <p class="text-emerald-100 text-sm mb-4">
+                Як ти почуваєшся після виконання завдань з Past Simple та Past Continuous?
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-center">
+                <button onclick="selectReflection('super')" class="bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl p-3 text-sm transition font-medium">
+                    😎 Все чудово! Я зрозумів(-ла) різницю між функціями часових форм.
+                </button>
+                <button onclick="selectReflection('good')" class="bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl p-3 text-sm transition font-medium">
+                    🤔 Майже все зрозуміло, але потрібно більше практики з When/While.
+                </button>
+                <button onclick="selectReflection('help')" class="bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl p-3 text-sm transition font-medium">
+                    🆘 Мені ще потрібно передивитися відео або поставити запитання ШІ.
+                </button>
+            </div>
+            <div id="reflectionMsg" class="mt-4 text-xs bg-black/20 p-3 rounded-xl hidden"></div>
+        </section>
+
+    </main>
+
+    <script>
+        // State tracking
+        let score1 = 0;
+        let score2 = 0;
+        let scoreHw = 0;
+        let chatHistoryLog = [];
+
+        function updateOverallScore() {
+            const total = score1 + score2 + scoreHw;
+            document.getElementById('totalPoints').innerText = total;
+            document.getElementById('overallScoreBadge').classList.remove('hidden');
+
+            if (total === 20) {
+                confetti({
+                    particleCount: 100,
+                    spread: 70,
+                    origin: { y: 0.6 }
+                });
+            }
+        }
+
+        // --- CHECK EXERCISE 1 ---
+        function checkEx1() {
+            const keys = {
+                ex1_1: { val: 'was watching', hint: 'Тривала дія у минулому перед супровідною короткою подією.' },
+                ex1_2: { val: 'dropped', hint: 'Коротка раптова дія (упустив телефон) перервала гральний процес.' },
+                ex1_3: { val: 'were doing', hint: 'Конкретний момент у минулому (о 5 годині) -> Past Continuous.' },
+                ex1_4: { val: 'started', hint: 'Почався дощ (коротка дія) під час прогулянки.' },
+                ex1_5: { val: 'was sleeping', hint: 'Вона спала (тривалий процес), коли її розбудив шум.' },
+                ex1_6: { val: 'were you doing', hint: 'Що ти робив у момент, коли я тобі написав?' }
+            };
+
+            let correct = 0;
+            for (let i = 1; i <= 6; i++) {
+                const select = document.getElementById(`ex1_${i}`);
+                const fb = document.getElementById(`ex1_${i}_fb`);
+                const userVal = select.value;
+                const answer = keys[`ex1_${i}`];
+
+                fb.classList.remove('hidden', 'text-emerald-600', 'text-rose-600');
+
+                if (userVal === answer.val) {
+                    correct++;
+                    fb.classList.add('text-emerald-600');
+                    fb.innerHTML = `<i class="fa-solid fa-circle-check"></i> Правильно! ${answer.hint}`;
+                } else {
+                    fb.classList.add('text-rose-600');
+                    fb.innerHTML = `<i class="fa-solid fa-circle-xmark"></i> Невірно. Правильно: <strong>${answer.val}</strong>. ${answer.hint}`;
+                }
+            }
+
+            score1 = correct;
+            document.getElementById('ex1Score').innerText = `Результат: ${score1}/6`;
+            updateOverallScore();
+        }
+
+        // --- CHECK EXERCISE 2 ---
+        function checkEx2() {
+            const keys = {
+                ex2_1: { val: 'While', hint: 'WHILE використовуємо з Past Continuous (тривала дія).' },
+                ex2_2: { val: 'when', hint: 'WHEN стоїть перед короткою дією у Past Simple (came).' },
+                ex2_3: { val: 'While', hint: 'WHILE для одночасних тривалих дій у минулому.' },
+                ex2_4: { val: 'while', hint: 'WHILE перед тривалою дією (was shopping).' },
+                ex2_5: { val: 'when', hint: 'WHEN перед факт-подією (the accident happened).' },
+                ex2_6: { val: 'When', hint: 'WHEN перед короткою дією (I opened).' }
+            };
+
+            let correct = 0;
+            for (let i = 1; i <= 6; i++) {
+                const select = document.getElementById(`ex2_${i}`);
+                const fb = document.getElementById(`ex2_${i}_fb`);
+                const userVal = select.value;
+                const answer = keys[`ex2_${i}`];
+
+                fb.classList.remove('hidden', 'text-emerald-600', 'text-rose-600');
+
+                if (userVal === answer.val) {
+                    correct++;
+                    fb.classList.add('text-emerald-600');
+                    fb.innerHTML = `<i class="fa-solid fa-circle-check"></i> Вірно! ${answer.hint}`;
+                } else {
+                    fb.classList.add('text-rose-600');
+                    fb.innerHTML = `<i class="fa-solid fa-circle-xmark"></i> Помилка. Правильно: <strong>${answer.val}</strong>. ${answer.hint}`;
+                }
+            }
+
+            score2 = correct;
+            document.getElementById('ex2Score').innerText = `Результат: ${score2}/6`;
+            updateOverallScore();
+        }
+
+        // --- CHECK HOMEWORK (PREPARE 7 UNIT 4) ---
+        function checkHw() {
+            const normalize = (str) => str.trim().toLowerCase().replace(/’/g, "'");
+
+            const answers = [
+                { id: 1, a: ['was swimming'], b: ['started'] },
+                { id: 2, a: ['phoned', 'was phoning'], b: ['were playing'] },
+                { id: 3, a: ['was walking'], b: ['saw'] },
+                { id: 4, a: ['was buying'], b: ['was playing'] },
+                { id: 5, a: ['was watching'], b: ['took'] },
+                { id: 6, a: ['were flying'], b: ['began'] },
+                { id: 7, a: ['was making'], b: ['was talking'], c: ['was cleaning'], d: ['were playing'] },
+                { id: 8, a: ['was doing'], b: ['arrived'] }
+            ];
+
+            let correctCount = 0;
+
+            answers.forEach(item => {
+                const fb = document.getElementById(`hw_${item.id}_fb`);
+                fb.classList.remove('hidden', 'text-emerald-600', 'text-rose-600');
+
+                let isRowCorrect = true;
+
+                if (item.id === 7) {
+                    const valA = normalize(document.getElementById('hw_7_a').value);
+                    const valB = normalize(document.getElementById('hw_7_b').value);
+                    const valC = normalize(document.getElementById('hw_7_c').value);
+                    const valD = normalize(document.getElementById('hw_7_d').value);
+
+                    const matchA = item.a.includes(valA);
+                    const matchB = item.b.includes(valB);
+                    const matchC = item.c.includes(valC);
+                    const matchD = item.d.includes(valD);
+
+                    if (matchA && matchB && matchC && matchD) {
+                        fb.classList.add('text-emerald-600');
+                        fb.innerHTML = `<i class="fa-solid fa-circle-check"></i> Чудово! Усі 4 одночасні тривалі дії (while + Past Continuous).`;
+                    } else {
+                        isRowCorrect = false;
+                        fb.classList.add('text-rose-600');
+                        fb.innerHTML = `<i class="fa-solid fa-circle-xmark"></i> Правильно: <strong>was making</strong>, <strong>was talking</strong>, <strong>was cleaning</strong>, <strong>were playing</strong>.`;
+                    }
+                } else {
+                    const inputA = document.getElementById(`hw_${item.id}_a`);
+                    const inputB = document.getElementById(`hw_${item.id}_b`);
+                    const valA = normalize(inputA.value);
+                    const valB = normalize(inputB.value);
+
+                    const matchA = item.a.includes(valA);
+                    const matchB = item.b.includes(valB);
+
+                    if (matchA && matchB) {
+                        fb.classList.add('text-emerald-600');
+                        fb.innerHTML = `<i class="fa-solid fa-circle-check"></i> Правильно!`;
+                    } else {
+                        isRowCorrect = false;
+                        fb.classList.add('text-rose-600');
+                        fb.innerHTML = `<i class="fa-solid fa-circle-xmark"></i> Правильно: <strong>${item.a[0]}</strong> ... <strong>${item.b[0]}</strong>`;
+                    }
+                }
+
+                if (isRowCorrect) correctCount++;
+            });
+
+            scoreHw = correctCount;
+            document.getElementById('hwScore').innerText = `Результат: ${scoreHw}/8`;
+            updateOverallScore();
+        }
+
+        // --- AI GEMINI INTEGRATION ---
+        async function handleAiQuery(e) {
+            e.preventDefault();
+            const inputEl = document.getElementById('aiInput');
+            const userMsg = inputEl.value.trim();
+            if (!userMsg) return;
+
+            const chatBox = document.getElementById('chatBox');
+            const btn = document.getElementById('aiSubmitBtn');
+
+            // Render User Message
+            appendChatMessage('user', userMsg);
+            chatHistoryLog.push(`Учень: ${userMsg}`);
+            inputEl.value = '';
+
+            // Disable button during call
+            btn.disabled = true;
+            btn.innerHTML = `<i class="fa-solid fa-spinner animate-spin"></i><span>Думаю...</span>`;
+
+            // Loading indicator in chat
+            const loadingDiv = document.createElement('div');
+            loadingDiv.id = 'aiLoading';
+            loadingDiv.className = 'flex items-start gap-3';
+            loadingDiv.innerHTML = `
+                <div class="w-8 h-8 rounded-full bg-indigo-500 flex items-center justify-center text-white text-xs font-bold shadow">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <div class="bg-slate-800 text-slate-400 p-3.5 rounded-2xl rounded-tl-none text-xs italic border border-slate-700 animate-pulse">
+                    ШІ-Вчитель готує пояснення...
+                </div>
+            `;
+            chatBox.appendChild(loadingDiv);
+            chatBox.scrollTop = chatBox.scrollHeight;
+
+            try {
+                const systemPrompt = "Ти — дружній, підтримуючий та професійний методист і ШІ-вчитель англійської мови для українського учня 7 класу НУШ (рівень A2, вік 12-13 років). Поясни правила Past Simple та Past Continuous зрозумілою українською мовою. Використовуй короткі речення, виділяй жирним ключові слова (was/were, -ing, V2, when, while) та наводь приклади з життя підлітків. Будь привітним і мотивуючим!";
+                
+                const apiKey = "";
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${apiKey}`;
+
+                const payload = {
+                    contents: [
+                        { role: 'user', parts: [{ text: `${systemPrompt}\n\nЗапитання від учня: ${userMsg}` }] }
+                    ]
+                };
+
+                const res = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const data = await res.json();
+                const aiReply = data?.candidates?.[0]?.content?.parts?.[0]?.text || "Вибач, виникла невелика помилка зв'язку. Спробуй ще раз!";
+
+                document.getElementById('aiLoading')?.remove();
+                appendChatMessage('ai', aiReply);
+                chatHistoryLog.push(`ШІ: ${aiReply}`);
+
+            } catch (err) {
+                console.error(err);
+                document.getElementById('aiLoading')?.remove();
+                appendChatMessage('ai', 'Вибач, не вдалося з\'єднатися з вчителем. Перевір інтернет та спробуй знову.');
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = `<span>Надіслати</span><i class="fa-solid fa-paper-plane text-xs"></i>`;
+            }
+        }
+
+        function appendChatMessage(role, text) {
+            const chatBox = document.getElementById('chatBox');
+            const msgDiv = document.createElement('div');
+            msgDiv.className = 'flex items-start gap-3';
+
+            // Simple formatting for bold and newlines
+            const formattedText = text.replace(/\n/g, '<br>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+
+            if (role === 'user') {
+                msgDiv.innerHTML = `
+                    <div class="ml-auto bg-indigo-600 text-white p-3.5 rounded-2xl rounded-tr-none max-w-[85%] text-sm leading-relaxed shadow">
+                        ${formattedText}
+                    </div>
+                `;
+            } else {
+                msgDiv.innerHTML = `
+                    <div class="w-8 h-8 rounded-full bg-indigo-500 flex items-center justify-center text-white text-xs font-bold flex-shrink-0 shadow">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <div class="bg-slate-800 text-slate-100 p-3.5 rounded-2xl rounded-tl-none max-w-[85%] text-sm leading-relaxed border border-slate-700">
+                        ${formattedText}
+                    </div>
+                `;
+            }
+
+            chatBox.appendChild(msgDiv);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        function copyChatForTeacher() {
+            if (chatHistoryLog.length === 0) {
+                alert("Діалог порожній. Постави спочатку запитання ШІ-вчителю!");
+                return;
+            }
+
+            const header = "--- Скріншот / Текст спілкування з ШІ-Вчителем (Past Simple vs Past Continuous) ---\n\n";
+            const fullText = header + chatHistoryLog.join("\n\n");
+
+            const tempInput = document.createElement('textarea');
+            tempInput.value = fullText;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            alert("Текст вашого діалогу успішно скопійовано! Вставити його можна у повідомлення вчителю.");
+        }
+
+        function selectReflection(type) {
+            const msg = document.getElementById('reflectionMsg');
+            msg.classList.remove('hidden');
+            if (type === 'super') {
+                msg.innerText = "Супер! Ти чудово засвоїв(-ла) матеріал. Можеш переходити до виконання наступних завдань.";
+            } else if (type === 'good') {
+                msg.innerText = "Хороший результат! Повтори правила використання When та While у Вправі 2.";
+            } else {
+                msg.innerText = "Нічого страшного! Запитай ШІ-помічника в Кроці 2 або передивись відео ще раз.";
+            }
+        }
+    </script>
+</body>
+</html>
